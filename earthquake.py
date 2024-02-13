@@ -13,10 +13,9 @@ def getCountry(lati, longi):
     style = 'full')
 
     resp = requests.get(url=url, params=params)
-        
+    jsonresp = resp.json()
     #if not resp.text.startswith('{"status"'):
-    if 'countryName' in resp.keys():
-        jsonresp = resp.json()
+    if 'countryName' in jsonresp.keys():
         return jsonresp['countryName']
     else:
         return 'None'
