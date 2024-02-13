@@ -1,0 +1,1 @@
+http://api.geonames.org/countryCodeJSON?formatted=true&lat=47.03&lng=10.2&username=pbtraining&style=full
